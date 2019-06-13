@@ -1,0 +1,682 @@
+> Comienza la ejecucion de COMPILE
+Excepcion-Analisis lexico: Falta la instruccion END del final
+> Comienza la ejecucion de RUN
+Error: Debes compilar antes de ejecutar...
+> Comienza la ejecucion de LOAD C:\Users\rdelvado\Desktop\ficherosPrueba\fibonacci.txt
+Programa fuente almacenado: 
+0: f = 0
+1: g = 1
+2: c = 0
+3: while c < 20
+4:   c = c + 1
+5:   a = g
+6:   g = f + g
+7:   f = a
+8: write g
+9: endwhile
+10: return
+11: end
+
+> Comienza la ejecucion de RUN
+Error: Debes compilar antes de ejecutar...
+Programa fuente almacenado: 
+0: f = 0
+1: g = 1
+2: c = 0
+3: while c < 20
+4:   c = c + 1
+5:   a = g
+6:   g = f + g
+7:   f = a
+8: write g
+9: endwhile
+10: return
+11: end
+
+> Comienza la ejecucion de LOAD C:\Users\rdelvado\Desktop\ficherosPrueba\fibonacci.txt
+Programa fuente almacenado: 
+0: f = 0
+1: g = 1
+2: c = 0
+3: while c < 20
+4:   c = c + 1
+5:   a = g
+6:   g = f + g
+7:   f = a
+8: write g
+9: endwhile
+10: return
+11: end
+
+> Comienza la ejecucion de COMPILE
+Programa fuente almacenado: 
+0: f = 0
+1: g = 1
+2: c = 0
+3: while c < 20
+4:   c = c + 1
+5:   a = g
+6:   g = f + g
+7:   f = a
+8: write g
+9: endwhile
+10: return
+11: end
+
+Programa bytecode almacenado: 
+0: PUSH 0
+1: STORE 0
+2: PUSH 1
+3: STORE 1
+4: PUSH 0
+5: STORE 2
+6: LOAD 2
+7: PUSH 20
+8: IFLE 24
+9: LOAD 2
+10: PUSH 1
+11: ADD
+12: STORE 2
+13: LOAD 1
+14: STORE 3
+15: LOAD 0
+16: LOAD 1
+17: ADD
+18: STORE 1
+19: LOAD 3
+20: STORE 0
+21: LOAD 1
+22: OUT
+23: GOTO 6
+24: HALT
+
+> Comienza la ejecucion de RUN
+consola: 1
+consola: 2
+consola: 3
+consola: 5
+consola: 8
+consola: 13
+consola: 21
+consola: 34
+consola: 55
+consola: 89
+consola: 144
+consola: 233
+consola: 377
+consola: 610
+consola: 987
+consola: 1597
+consola: 2584
+consola: 4181
+consola: 6765
+consola: 10946
+El estado de la maquina tras ejecutar programa es:
+
+Estado de la CPU: 
+  Memoria:  [0]:6765 [1]:10946 [2]:20 [3]:6765
+  Pila: <vacia>
+
+Programa fuente almacenado: 
+0: f = 0
+1: g = 1
+2: c = 0
+3: while c < 20
+4:   c = c + 1
+5:   a = g
+6:   g = f + g
+7:   f = a
+8: write g
+9: endwhile
+10: return
+11: end
+
+Programa bytecode almacenado: 
+0: PUSH 0
+1: STORE 0
+2: PUSH 1
+3: STORE 1
+4: PUSH 0
+5: STORE 2
+6: LOAD 2
+7: PUSH 20
+8: IFLE 24
+9: LOAD 2
+10: PUSH 1
+11: ADD
+12: STORE 2
+13: LOAD 1
+14: STORE 3
+15: LOAD 0
+16: LOAD 1
+17: ADD
+18: STORE 1
+19: LOAD 3
+20: STORE 0
+21: LOAD 1
+22: OUT
+23: GOTO 6
+24: HALT
+
+> Comienza la ejecucion de LOAD C:\Users\rdelvado\Desktop\ficherosPrueba\nestedwhile.txt
+Programa fuente almacenado: 
+0: x = 5
+1: r = 0
+2: while 0 < x 
+3:   y = x
+4:   s = 1
+5:   while 0 < y
+6:     s = s * y
+7:     y = y - 1
+8:   endwhile
+9:   write s
+10:   r = r + s
+11:   x = x - 1
+12: endwhile
+13: return
+14: end
+
+> Comienza la ejecucion de COMPILE
+Programa fuente almacenado: 
+0: x = 5
+1: r = 0
+2: while 0 < x 
+3:   y = x
+4:   s = 1
+5:   while 0 < y
+6:     s = s * y
+7:     y = y - 1
+8:   endwhile
+9:   write s
+10:   r = r + s
+11:   x = x - 1
+12: endwhile
+13: return
+14: end
+
+Programa bytecode almacenado: 
+0: PUSH 5
+1: STORE 4
+2: PUSH 0
+3: STORE 5
+4: PUSH 0
+5: LOAD 4
+6: IFLE 34
+7: LOAD 4
+8: STORE 6
+9: PUSH 1
+10: STORE 7
+11: PUSH 0
+12: LOAD 6
+13: IFLE 23
+14: LOAD 7
+15: LOAD 6
+16: MUL
+17: STORE 7
+18: LOAD 6
+19: PUSH 1
+20: SUB
+21: STORE 6
+22: GOTO 11
+23: LOAD 7
+24: OUT
+25: LOAD 5
+26: LOAD 7
+27: ADD
+28: STORE 5
+29: LOAD 4
+30: PUSH 1
+31: SUB
+32: STORE 4
+33: GOTO 4
+34: HALT
+
+> Comienza la ejecucion de RUN
+consola: 120
+consola: 24
+consola: 6
+consola: 2
+consola: 1
+El estado de la maquina tras ejecutar programa es:
+
+Estado de la CPU: 
+  Memoria:  [4]:0 [5]:153 [6]:0 [7]:1
+  Pila: <vacia>
+
+Programa fuente almacenado: 
+0: x = 5
+1: r = 0
+2: while 0 < x 
+3:   y = x
+4:   s = 1
+5:   while 0 < y
+6:     s = s * y
+7:     y = y - 1
+8:   endwhile
+9:   write s
+10:   r = r + s
+11:   x = x - 1
+12: endwhile
+13: return
+14: end
+
+Programa bytecode almacenado: 
+0: PUSH 5
+1: STORE 4
+2: PUSH 0
+3: STORE 5
+4: PUSH 0
+5: LOAD 4
+6: IFLE 34
+7: LOAD 4
+8: STORE 6
+9: PUSH 1
+10: STORE 7
+11: PUSH 0
+12: LOAD 6
+13: IFLE 23
+14: LOAD 7
+15: LOAD 6
+16: MUL
+17: STORE 7
+18: LOAD 6
+19: PUSH 1
+20: SUB
+21: STORE 6
+22: GOTO 11
+23: LOAD 7
+24: OUT
+25: LOAD 5
+26: LOAD 7
+27: ADD
+28: STORE 5
+29: LOAD 4
+30: PUSH 1
+31: SUB
+32: STORE 4
+33: GOTO 4
+34: HALT
+
+> Comienza la ejecucion de LOAD C:\Users\rdelvado\Desktop\ficherosPrueba\noexiste.txt
+Excepcion: Fichero no Encontrado...
+> Comienza la ejecucion de LOAD C:\Users\rdelvado\Desktop\ficherosPrueba\noparsea1.txt
+Programa fuente almacenado: 
+0: x = x + 1
+1: y =2
+2: end
+
+> Comienza la ejecucion de COMPILE
+Excepcion-Analisis lexico: La instruccion 1 es incorrecta
+> Comienza la ejecucion de RUN
+Error: Debes compilar antes de ejecutar...
+Programa fuente almacenado: 
+0: x = x + 1
+1: y =2
+2: end
+
+> Comienza la ejecucion de LOAD C:\Users\rdelvado\Desktop\ficherosPrueba\noparsea2.txt
+Programa fuente almacenado: 
+0: x = x + 1
+1: 2 = 2
+2: end
+
+> Comienza la ejecucion de COMPILE
+Programa fuente almacenado: 
+0: x = x + 1
+1: 2 = 2
+2: end
+
+Programa bytecode almacenado: 
+0: LOAD 4
+1: PUSH 1
+2: ADD
+3: STORE 4
+4: PUSH 2
+5: STORE 8
+
+> Comienza la ejecucion de RUN
+El estado de la maquina tras ejecutar programa es:
+
+Estado de la CPU: 
+  Memoria:  [4]:1 [8]:2
+  Pila: <vacia>
+
+Programa fuente almacenado: 
+0: x = x + 1
+1: 2 = 2
+2: end
+
+Programa bytecode almacenado: 
+0: LOAD 4
+1: PUSH 1
+2: ADD
+3: STORE 4
+4: PUSH 2
+5: STORE 8
+
+> Comienza la ejecucion de LOAD C:\Users\rdelvado\Desktop\ficherosPrueba\noparsea3.txt
+Programa fuente almacenado: 
+0: x = x & 1
+1: x = 2
+2: end
+
+> Comienza la ejecucion de COMPILE
+Excepcion-Analisis lexico: La instruccion 0 es incorrecta
+> Comienza la ejecucion de RUN
+Error: Debes compilar antes de ejecutar...
+Programa fuente almacenado: 
+0: x = x & 1
+1: x = 2
+2: end
+
+> Comienza la ejecucion de LOAD C:\Users\rdelvado\Desktop\ficherosPrueba\whilenoparsea.txt
+Programa fuente almacenado: 
+0: x = 5
+1: r = 1
+2: while 0 < x 
+3:   r = r * x
+4:   x = x & 1
+5: endwhile
+6: write r
+7: return
+8: end
+
+> Comienza la ejecucion de COMPILE
+Excepcion-Analisis lexico: La instruccion 4 es incorrecta
+> Comienza la ejecucion de RUN
+Error: Debes compilar antes de ejecutar...
+Programa fuente almacenado: 
+0: x = 5
+1: r = 1
+2: while 0 < x 
+3:   r = r * x
+4:   x = x & 1
+5: endwhile
+6: write r
+7: return
+8: end
+
+> Comienza la ejecucion de LOAD C:\Users\rdelvado\Desktop\ficherosPrueba\noend.txt
+Programa fuente almacenado: 
+0: x = x + 1
+1: y = 2
+
+> Comienza la ejecucion de COMPILE
+Excepcion-Analisis lexico: Falta la instruccion END del final
+> Comienza la ejecucion de RUN
+Error: Debes compilar antes de ejecutar...
+Programa fuente almacenado: 
+0: x = x + 1
+1: y = 2
+
+> Comienza la ejecucion de LOAD C:\Users\rdelvado\Desktop\ficherosPrueba\noendwhile.txt
+Programa fuente almacenado: 
+0: x = 0
+1: while x < 10
+2:  x = x + 1
+3: end
+
+> Comienza la ejecucion de COMPILE
+Excepcion-Analisis lexico: La instruccion 3 es incorrecta
+> Comienza la ejecucion de RUN
+Error: Debes compilar antes de ejecutar...
+Programa fuente almacenado: 
+0: x = 0
+1: while x < 10
+2:  x = x + 1
+3: end
+
+> Comienza la ejecucion de LOAD C:\Users\rdelvado\Desktop\ficherosPrueba\whilevacio.txt
+Programa fuente almacenado: 
+0: x = 5
+1: r = 1
+2: while 0 = x 
+3: endwhile
+4: write r
+5: return
+6: end
+
+> Comienza la ejecucion de COMPILE
+Programa fuente almacenado: 
+0: x = 5
+1: r = 1
+2: while 0 = x 
+3: endwhile
+4: write r
+5: return
+6: end
+
+Programa bytecode almacenado: 
+0: PUSH 5
+1: STORE 4
+2: PUSH 1
+3: STORE 5
+4: PUSH 0
+5: LOAD 4
+6: IFEQ 8
+7: GOTO 4
+8: LOAD 5
+9: OUT
+10: HALT
+
+> Comienza la ejecucion de RUN
+consola: 1
+El estado de la maquina tras ejecutar programa es:
+
+Estado de la CPU: 
+  Memoria:  [4]:5 [5]:1
+  Pila: <vacia>
+
+Programa fuente almacenado: 
+0: x = 5
+1: r = 1
+2: while 0 = x 
+3: endwhile
+4: write r
+5: return
+6: end
+
+Programa bytecode almacenado: 
+0: PUSH 5
+1: STORE 4
+2: PUSH 1
+3: STORE 5
+4: PUSH 0
+5: LOAD 4
+6: IFEQ 8
+7: GOTO 4
+8: LOAD 5
+9: OUT
+10: HALT
+
+> Comienza la ejecucion de LOAD C:\Users\rdelvado\Desktop\ficherosPrueba\divisioncero.txt
+Programa fuente almacenado: 
+0: x = 0
+1: y = 0
+2: z = x / y
+3: end
+
+> Comienza la ejecucion de COMPILE
+Programa fuente almacenado: 
+0: x = 0
+1: y = 0
+2: z = x / y
+3: end
+
+Programa bytecode almacenado: 
+0: PUSH 0
+1: STORE 4
+2: PUSH 0
+3: STORE 6
+4: LOAD 4
+5: LOAD 6
+6: DIV
+7: STORE 9
+
+> Comienza la ejecucion de RUN
+Excepcion en la ejecucion del bytecode 6
+Excepcion-bytecode DIV: Division entre 0
+> Comienza la ejecucion de REPLACEBC 0
+Nuevo bytecode: Programa fuente almacenado: 
+0: x = 0
+1: y = 0
+2: z = x / y
+3: end
+
+Programa bytecode almacenado: 
+0: PUSH 1
+1: STORE 4
+2: PUSH 0
+3: STORE 6
+4: LOAD 4
+5: LOAD 6
+6: DIV
+7: STORE 9
+
+> Comienza la ejecucion de REPLACEBC 1
+Nuevo bytecode: Programa fuente almacenado: 
+0: x = 0
+1: y = 0
+2: z = x / y
+3: end
+
+Programa bytecode almacenado: 
+0: PUSH 1
+1: PUSH 2
+2: PUSH 0
+3: STORE 6
+4: LOAD 4
+5: LOAD 6
+6: DIV
+7: STORE 9
+
+> Comienza la ejecucion de REPLACEBC 2
+Nuevo bytecode: Programa fuente almacenado: 
+0: x = 0
+1: y = 0
+2: z = x / y
+3: end
+
+Programa bytecode almacenado: 
+0: PUSH 1
+1: PUSH 2
+2: PUSH 3
+3: STORE 6
+4: LOAD 4
+5: LOAD 6
+6: DIV
+7: STORE 9
+
+> Comienza la ejecucion de REPLACEBC 3
+Nuevo bytecode: Programa fuente almacenado: 
+0: x = 0
+1: y = 0
+2: z = x / y
+3: end
+
+Programa bytecode almacenado: 
+0: PUSH 1
+1: PUSH 2
+2: PUSH 3
+3: PUSH 4
+4: LOAD 4
+5: LOAD 6
+6: DIV
+7: STORE 9
+
+> Comienza la ejecucion de RUN
+Excepcion en la ejecucion del bytecode 4
+Exception-bytecode PUSH: Tamaño de pila insuficiente
+> Comienza la ejecucion de REPLACEBC 0
+Nuevo bytecode: Programa fuente almacenado: 
+0: x = 0
+1: y = 0
+2: z = x / y
+3: end
+
+Programa bytecode almacenado: 
+0: ADD
+1: PUSH 2
+2: PUSH 3
+3: PUSH 4
+4: LOAD 4
+5: LOAD 6
+6: DIV
+7: STORE 9
+
+> Comienza la ejecucion de RUN
+Excepcion en la ejecucion del bytecode 0
+Excepcion-bytecode ADD: Tamano de pila insuficiente
+> Error: Comando incorrecto
+> Error: Comando incorrecto
+> Error: Comando incorrecto
+> Error: Comando incorrecto
+> Error: Comando incorrecto
+> Comienza la ejecucion de LOAD C:\Users\rdelvado\Desktop\ficherosPrueba\programaFuenteLargo.txt
+Excepcion: No hay capacidad para almacenar el programa fuente 
+Excepcion: Superada la capacidad maxima del array (30)
+> Comienza la ejecucion de LOAD C:\Users\rdelvado\Desktop\ficherosPrueba\programaParseadoLargo.txt
+Programa fuente almacenado: 
+0: x = 5
+1: x = 5
+2: x = 5
+3: x = 5
+4: x = 5
+5: x = 5
+6: x = 5
+7: x = 5
+8: x = 5
+9: x = 5
+10: x = 5
+11: x = 5
+12: x = 5
+13: x = 5
+14: x = 5
+15: x = 5
+16: x = 5
+17: x = 5
+18: x = 5
+19: x = 5
+20: x = 5
+21: x = 5
+22: x = 5
+23: x = 5
+24: x = 5
+25: x = 5
+26: x = 5
+27: x = 5
+28: end
+
+> Comienza la ejecucion de COMPILE
+Excepcion-Analisis lexico: La instruccion 26 es incorrecta
+> Comienza la ejecucion de LOAD C:\Users\rdelvado\Desktop\ficherosPrueba\programaBCLargo.txt
+Programa fuente almacenado: 
+0: x = 1 + 2
+1: x = 1 + 2
+2: x = 1 + 2
+3: x = 1 + 2
+4: x = 1 + 2
+5: x = 1 + 2
+6: x = 1 + 2
+7: x = 1 + 2
+8: x = 1 + 2
+9: x = 1 + 2
+10: x = 1 + 2
+11: x = 1 + 2
+12: x = 1 + 2
+13: x = 1 + 2
+14: x = 1 + 2
+15: x = 1 + 2
+16: x = 1 + 2
+17: x = 1 + 2
+18: x = 1 + 2
+19: x = 1 + 2
+20: x = 1 + 2
+21: x = 1 + 2
+22: x = 1 + 2
+23: x = 1 + 2
+24: end
+
+> Comienza la ejecucion de COMPILE
+Excepcion en la generacion del bytecode: Se excede la capacidad maxima del array
+> 

@@ -1,0 +1,57 @@
+compile
+run
+load fibonacci.txt
+run
+load fibonacci.txt
+compile
+run
+load nestedwhile.txt
+compile
+run
+load noexiste.txt
+load noparsea1.txt
+compile
+run
+load noparsea2.txt
+compile
+run
+load noparsea3.txt
+compile
+run
+load whilenoparsea.txt
+compile
+run
+load noend.txt
+compile
+run
+load noendwhile.txt
+compile
+run
+load whilevacio.txt
+compile
+run
+load divisioncero.txt
+compile
+run
+replacebc 0
+push 1
+replacebc 1
+push 2
+replacebc 2
+push 3
+replacebc 3
+push 4
+run
+replacebc 0
+add
+run
+replace 0
+adf
+replace 0
+push a
+replace a
+load programaFuenteLargo.txt
+load programaParseadoLargo.txt
+compile
+load programaBCLargo.txt
+compile
